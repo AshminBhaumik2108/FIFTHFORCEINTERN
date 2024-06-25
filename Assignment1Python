@@ -1,0 +1,30 @@
+#1
+# For Perfect Square Number....
+import math
+rangeOfPS = int(input("Enter Range: "))
+EmptyList = []
+for number in range(rangeOfPS + 1):
+    if (math.sqrt(number)).is_integer():
+        EmptyList.append(number)
+print(EmptyList)
+
+#2
+# For combination....
+num1 = int(input("Enter Range: "))
+for i in range(num1+1):
+    print("* "*i)
+for i in range(num1-1, 0, -1):
+    print("* "*i)
+
+#3
+# To check Prime Number........
+primeCheck = int(input("Enter number: "))
+mul = 0
+for i in range(1, primeCheck+1):
+    if primeCheck%i == 0:
+        mul += 1
+if mul > 2:
+    print("Not a Prime Number...")
+else:
+    print("It is a Prime Number...")
+
